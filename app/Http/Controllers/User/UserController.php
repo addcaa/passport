@@ -95,7 +95,7 @@ class UserController extends Controller
         }else{
             $arr=[
                 'res'=>40000,
-                'msg'=>'失败',
+                'msg'=>'授权失败',
 
             ];
             return json_encode($arr,JSON_UNESCAPED_UNICODE);

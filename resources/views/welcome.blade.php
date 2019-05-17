@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    http://www.passport.com
                 </div>
 
                 <div class="links">
