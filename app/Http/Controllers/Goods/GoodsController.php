@@ -139,8 +139,8 @@ class GoodsController extends Controller
     public function __construct(){
         $this->app_id = env('ALIPAY_APPID');
         $this->gate_way = 'https://openapi.alipaydev.com/gateway.do';
-        $this->notify_url ='http://www.passport.com/goods/notify';  //回调地址
-        $this->return_url = "http://www.passport.com/goods/aliReturn";
+        $this->notify_url =env('NOTIFY_URL');  //回调地址
+        $this->return_url =env('RETURN_URL');
         $this->rsaPrivateKeyFilePath = storage_path('app/key/private.pem');   //应用私钥
         $this->aliPubKey = storage_path('app/key/public.pem'); //支付宝公钥
     }

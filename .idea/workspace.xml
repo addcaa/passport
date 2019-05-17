@@ -4,7 +4,6 @@
     <list default="true" id="5cee382e-121f-4d3f-a075-6236d5151499" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.editorconfig" afterPath="$PROJECT_DIR$/.editorconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env.example" afterPath="$PROJECT_DIR$/.env.example" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitattributes" afterPath="$PROJECT_DIR$/.gitattributes" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
@@ -134,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoodsController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GoodsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Goods/GoodsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37908497">
-              <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.0">
+              <caret line="142" column="42" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
               <folding>
                 <element signature="e#46#74#0#PHP" expanded="true" />
                 <element signature="e#233#886#0#PHP" expanded="false" />
@@ -146,24 +145,19 @@
                 <element signature="e#1692#1841#0#PHP" expanded="false" />
                 <element signature="e#1857#3396#0#PHP" expanded="false" />
                 <element signature="e#3430#4013#0#PHP" expanded="false" />
-                <element signature="e#4169#4622#0#PHP" expanded="false" />
-                <element signature="e#6356#6456#0#PHP" expanded="false" />
-                <element signature="e#6461#6893#0#PHP" expanded="false" />
-                <element signature="e#6898#7518#0#PHP" expanded="false" />
-                <element signature="e#7523#7755#0#PHP" expanded="false" />
-                <element signature="e#7862#8159#0#PHP" expanded="false" />
-                <element signature="e#8195#8454#0#PHP" expanded="false" />
-                <element signature="e#8490#8580#0#PHP" expanded="false" />
+                <element signature="e#6310#6410#0#PHP" expanded="false" />
+                <element signature="e#8149#8408#0#PHP" expanded="false" />
+                <element signature="e#8444#8534#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="27" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.73953485">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="47" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -181,8 +175,8 @@
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Goods/GoodsController.php" />
       </list>
     </option>
@@ -415,14 +409,9 @@
             <element signature="e#1692#1841#0#PHP" expanded="false" />
             <element signature="e#1857#3396#0#PHP" expanded="false" />
             <element signature="e#3430#4013#0#PHP" expanded="false" />
-            <element signature="e#4169#4622#0#PHP" expanded="false" />
-            <element signature="e#6356#6456#0#PHP" expanded="false" />
-            <element signature="e#6461#6893#0#PHP" expanded="false" />
-            <element signature="e#6898#7518#0#PHP" expanded="false" />
-            <element signature="e#7523#7755#0#PHP" expanded="false" />
-            <element signature="e#7862#8159#0#PHP" expanded="false" />
-            <element signature="e#8195#8454#0#PHP" expanded="false" />
-            <element signature="e#8490#8580#0#PHP" expanded="false" />
+            <element signature="e#6310#6410#0#PHP" expanded="false" />
+            <element signature="e#8149#8408#0#PHP" expanded="false" />
+            <element signature="e#8444#8534#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -518,22 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="27" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/key/public.pem">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.037209302">
@@ -550,10 +523,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Goods/GoodsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37908497">
-          <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+        <state vertical-scroll-proportion="-8.0">
+          <caret line="142" column="42" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
           <folding>
             <element signature="e#46#74#0#PHP" expanded="true" />
             <element signature="e#233#886#0#PHP" expanded="false" />
@@ -561,15 +542,18 @@
             <element signature="e#1692#1841#0#PHP" expanded="false" />
             <element signature="e#1857#3396#0#PHP" expanded="false" />
             <element signature="e#3430#4013#0#PHP" expanded="false" />
-            <element signature="e#4169#4622#0#PHP" expanded="false" />
-            <element signature="e#6356#6456#0#PHP" expanded="false" />
-            <element signature="e#6461#6893#0#PHP" expanded="false" />
-            <element signature="e#6898#7518#0#PHP" expanded="false" />
-            <element signature="e#7523#7755#0#PHP" expanded="false" />
-            <element signature="e#7862#8159#0#PHP" expanded="false" />
-            <element signature="e#8195#8454#0#PHP" expanded="false" />
-            <element signature="e#8490#8580#0#PHP" expanded="false" />
+            <element signature="e#6310#6410#0#PHP" expanded="false" />
+            <element signature="e#8149#8408#0#PHP" expanded="false" />
+            <element signature="e#8444#8534#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73953485">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="47" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
