@@ -31,3 +31,5 @@ Route::get('goods/shopping','Goods\GoodsController@shopping');//商品购物车
 Route::get('goods/buy','Goods\GoodsController@buy');//订单
 
 Route::get('goods/drop','Goods\GoodsController@drop');//订单列表
+
+Route::get('goods/submitorder','Goods\GoodsController@submitorder');//订单列表

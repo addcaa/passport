@@ -66,64 +66,75 @@ class GoodsController extends Controller
     }
     //立即购买
     public function buy(){
-        DB::beginTransaction();
-        $goods_price=$_GET['goods_price'];
         $cart_id=$_GET['cart_id'];
+        DB::beginTransaction();
         $cart_info=DB::table('cart')->where(['cart_id'=>$cart_id])->first();
         $goods_id=$cart_info->goods_id;
         $goods_info=DB::table('goods')->where(['goods_id'=>$goods_id])->first();
         $order=substr(md5(Str::random(10)),5,15);
-        // try {
-        //     $order_info=[
-        //         'on_order'=>$order,
-        //         'totalprice'=>$goods_info->goods_price,
-        //         'add_time'=>time(),
-        //     ];
-        //     $order_arr=DB::table('order')->insert($order_info);
-        //     $oid = DB::getPdo('order')->lastInsertId();
-        //     $order_goods=[
-        //         'oid'=>$oid,
-        //         'goods_id'=>$goods_id,
-        //         'goods_name'=>$goods_info->goods_name,
-        //         'goods_price'=>$goods_info->goods_price,
-        //         'user_id'=>$cart_info->user_id
-        //     ];
-        //     $order_goods_info=DB::table('orders_detail')->insert($order_goods);
-        //     $cart_ser=DB::table('cart')->where(['cart_id'=>$cart_id])->delete();
-        //     DB::commit();
-        //     $add=[
-        //         'ser'=>200,
-        //         'msg'=>"购买成功",
-        //     ];
-        //     return json_encode($add,JSON_UNESCAPED_UNICODE);
-        // } catch (\Exception $exception) {
-        //     DB::rollBack();
-        //     $add=[
-        //         'ser'=>5000,
-        //         'msg'=>"购买失败",
-        //     ];
-        //     return json_encode($add,JSON_UNESCAPED_UNICODE);
-        //     // return $exception->getMessage();
-        // }
-        // if($order_arr && $order_goods_info ){
-        //     　DB::commit();
-        //     return  1;
-        // }else{
-        //     DB::rollback();
-        //     return  0;
-        // }
+        try {
+            $order_info=[
+                'on_order'=>$order,
+                'totalprice'=>$goods_info->goods_price,
+                'add_time'=>time(),
+            ];
+            $order_arr=DB::table('order')->insert($order_info);
+            $oid = DB::getPdo('order')->lastInsertId();
+            $order_goods=[
+                'oid'=>$oid,
+                'goods_id'=>$goods_id,
+                'goods_name'=>$goods_info->goods_name,
+                'goods_price'=>$goods_info->goods_price,
+                'user_id'=>$cart_info->user_id
+            ];
+            $order_goods_info=DB::table('orders_detail')->insert($order_goods);
+            $cart_ser=DB::table('cart')->where(['cart_id'=>$cart_id])->delete();
+            DB::commit();
+            $add=[
+                'ser'=>200,
+                'msg'=>"购买成功",
+            ];
+            return json_encode($add,JSON_UNESCAPED_UNICODE);
+        } catch (\Exception $exception) {
+            DB::rollBack();
+            $add=[
+                'ser'=>5000,
+                'msg'=>"购买失败",
+            ];
+            return json_encode($add,JSON_UNESCAPED_UNICODE);
+            // return $exception->getMessage();
+        }
     }
 
     /**
      * 订单列表
      */
     public function drop(){
-        $u_id=$_GET['u_id'];
+        $where=[
+            'user_id'=>$_GET['u_id'],
+            'goods_id'=>$_GET['goods_id']
+        ];
+//        dd($where);
         $arr=DB::table("orders_detail")
         ->join('order', 'orders_detail.oid', '=', 'order.oid')
         ->select("goods_name","goods_price","on_order")
-        ->where(['user_id'=>$_GET['u_id']])
+        ->where($where)
         ->get();
-        return json_encode($arr,JSON_UNESCAPED_UNICODE);
+        $data=[
+            'goods_name'=>$arr[0]->goods_name,
+            'goods_price'=>$arr[0]->goods_price,
+            'on_order'=>$arr[0]->on_order,
+        ];
+        return json_encode($data,JSON_UNESCAPED_UNICODE);
+    }
+
+    /**
+     * 提交订单
+     */
+    public function submitorder(){
+        $u_id=$_GET['u_id'];
+        $goods_price=$_GET['goods_price'];
+        $on_order=$_GET['on_order'];
+        dd($u_id,$goods_price,$on_order);
     }
 }
