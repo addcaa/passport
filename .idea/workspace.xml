@@ -134,18 +134,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoodsController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GoodsController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Goods/GoodsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.909091">
-              <caret line="283" column="29" selection-start-line="283" selection-start-column="29" selection-end-line="283" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.085910656">
+              <caret line="278" column="89" selection-start-line="278" selection-start-column="83" selection-end-line="278" selection-end-column="89" />
               <folding>
                 <element signature="e#46#74#0#PHP" expanded="true" />
                 <element signature="e#233#886#0#PHP" expanded="false" />
                 <element signature="e#902#1676#0#PHP" expanded="false" />
                 <element signature="e#1692#1841#0#PHP" expanded="false" />
                 <element signature="e#3350#3933#0#PHP" expanded="false" />
-                <element signature="e#4530#6223#0#PHP" expanded="false" />
                 <element signature="e#6230#6330#0#PHP" expanded="false" />
                 <element signature="e#6335#6767#0#PHP" expanded="false" />
                 <element signature="e#6772#7392#0#PHP" expanded="false" />
@@ -166,10 +165,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40930232">
+            <state vertical-scroll-proportion="0.0">
               <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
               <folding />
             </state>
@@ -222,9 +221,9 @@
         <option value="$PROJECT_DIR$/storage/app/key/public.pem" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Goods/GoodsController.php" />
         <option value="$PROJECT_DIR$/public/logs/alipay_notify.log" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Goods/GoodsController.php" />
       </list>
     </option>
   </component>
@@ -465,7 +464,6 @@
             <element signature="e#902#1676#0#PHP" expanded="false" />
             <element signature="e#1692#1841#0#PHP" expanded="false" />
             <element signature="e#3350#3933#0#PHP" expanded="false" />
-            <element signature="e#4530#6223#0#PHP" expanded="false" />
             <element signature="e#6230#6330#0#PHP" expanded="false" />
             <element signature="e#6335#6767#0#PHP" expanded="false" />
             <element signature="e#6772#7392#0#PHP" expanded="false" />
@@ -517,7 +515,6 @@
             <element signature="e#902#1676#0#PHP" expanded="false" />
             <element signature="e#1692#1841#0#PHP" expanded="false" />
             <element signature="e#3350#3933#0#PHP" expanded="false" />
-            <element signature="e#4530#6223#0#PHP" expanded="false" />
             <element signature="e#6230#6330#0#PHP" expanded="false" />
             <element signature="e#6335#6767#0#PHP" expanded="false" />
             <element signature="e#6772#7392#0#PHP" expanded="false" />
@@ -569,7 +566,6 @@
             <element signature="e#902#1676#0#PHP" expanded="false" />
             <element signature="e#1692#1841#0#PHP" expanded="false" />
             <element signature="e#3350#3933#0#PHP" expanded="false" />
-            <element signature="e#4530#6223#0#PHP" expanded="false" />
             <element signature="e#6230#6330#0#PHP" expanded="false" />
             <element signature="e#6335#6767#0#PHP" expanded="false" />
             <element signature="e#6772#7392#0#PHP" expanded="false" />
@@ -696,26 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Goods/GoodsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.909091">
-          <caret line="283" column="29" selection-start-line="283" selection-start-column="29" selection-end-line="283" selection-end-column="29" />
-          <folding>
-            <element signature="e#46#74#0#PHP" expanded="true" />
-            <element signature="e#233#886#0#PHP" expanded="false" />
-            <element signature="e#902#1676#0#PHP" expanded="false" />
-            <element signature="e#1692#1841#0#PHP" expanded="false" />
-            <element signature="e#3350#3933#0#PHP" expanded="false" />
-            <element signature="e#4530#6223#0#PHP" expanded="false" />
-            <element signature="e#6230#6330#0#PHP" expanded="false" />
-            <element signature="e#6335#6767#0#PHP" expanded="false" />
-            <element signature="e#6772#7392#0#PHP" expanded="false" />
-            <element signature="e#7397#7629#0#PHP" expanded="false" />
-            <element signature="e#7736#8033#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/logs/alipay_notify.log">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -726,9 +702,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40930232">
+        <state vertical-scroll-proportion="0.0">
           <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Goods/GoodsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.085910656">
+          <caret line="278" column="89" selection-start-line="278" selection-start-column="83" selection-end-line="278" selection-end-column="89" />
+          <folding>
+            <element signature="e#46#74#0#PHP" expanded="true" />
+            <element signature="e#233#886#0#PHP" expanded="false" />
+            <element signature="e#902#1676#0#PHP" expanded="false" />
+            <element signature="e#1692#1841#0#PHP" expanded="false" />
+            <element signature="e#3350#3933#0#PHP" expanded="false" />
+            <element signature="e#6230#6330#0#PHP" expanded="false" />
+            <element signature="e#6335#6767#0#PHP" expanded="false" />
+            <element signature="e#6772#7392#0#PHP" expanded="false" />
+            <element signature="e#7397#7629#0#PHP" expanded="false" />
+            <element signature="e#7736#8033#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

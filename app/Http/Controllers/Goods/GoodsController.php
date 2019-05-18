@@ -262,17 +262,14 @@ class GoodsController extends Controller
     public function notify()
     {
         DB::beginTransaction();
-//        $p = json_encode($_POST);
-//        $log_str = "\n>>>>>> " .date('Y-m-d H:i:s') . ' '.$p . " \n";
-//        file_put_contents('logs/alipay_notify.log',$log_str,FILE_APPEND);
-        $a=file_get_contents('logs/alipay_notify.log');
-        $data=json_decode($a,true);
-        dd($data);
+        $data = json_encode($_POST);
+        $log_str = "\n>>>>>> " .date('Y-m-d H:i:s') . ' '.$data . " \n";
+        file_put_contents('logs/alipay_notify.log',$log_str,FILE_APPEND);
+//        $a=file_get_contents('logs/alipay_notify.log');
+        $data=json_decode($data,true);
         $time=strtotime($data['notify_time']);
         if($data['trade_status']=='TRADE_SUCCESS'){
             $on_order=$data['out_trade_no'];
-            //4079552d330d625
-//            dd($on_order);
             $where=[
                 'on_order'=>$on_order
             ];
