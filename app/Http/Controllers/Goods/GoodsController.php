@@ -64,6 +64,7 @@ class GoodsController extends Controller
         $arr_all=DB::table("cart")->where(['user_id'=>$_GET['u_id']])->get();
         return json_encode($arr_all);
     }
+
     //立即购买
     public function buy(){
         $cart_id=$_GET['cart_id'];
@@ -88,7 +89,6 @@ class GoodsController extends Controller
                 'user_id'=>$cart_info->user_id
             ];
             $order_goods_info=DB::table('orders_detail')->insert($order_goods);
-            $cart_ser=DB::table('cart')->where(['cart_id'=>$cart_id])->delete();
             DB::commit();
             $add=[
                 'ser'=>200,
@@ -261,12 +261,33 @@ class GoodsController extends Controller
      */
     public function notify()
     {
-        $p = json_encode($_POST);
-        $log_str = "\n>>>>>> " .date('Y-m-d H:i:s') . ' '.$p . " \n";
-        file_put_contents('logs/alipay_notify.log',$log_str,FILE_APPEND);
-
-        echo 'success';
-        //TODO 验签 更新订单状态
+        DB::beginTransaction();
+//        $p = json_encode($_POST);
+//        $log_str = "\n>>>>>> " .date('Y-m-d H:i:s') . ' '.$p . " \n";
+//        file_put_contents('logs/alipay_notify.log',$log_str,FILE_APPEND);
+        $a=file_get_contents('logs/alipay_notify.log');
+        $data=json_decode($a,true);
+        dd($data);
+        $time=strtotime($data['notify_time']);
+        if($data['trade_status']=='TRADE_SUCCESS'){
+            $on_order=$data['out_trade_no'];
+            //4079552d330d625
+//            dd($on_order);
+            $where=[
+                'on_order'=>$on_order
+            ];
+            $arr=DB::table('order')->where($where)->update(['is_delete'=>1,'pay_time'=>$time]);
+            $oid=DB::table("order")->where($where)->first('oid');
+            $goods_id=DB::table("orders_detail")->where(['oid'=>$oid->oid])->first('goods_id');
+            $cart_ser=DB::table('cart')->where(['goods_id'=>$goods_id->goods_id])->delete();
+            if($arr && $oid && $goods_id && $cart_ser){
+                DB::commit();
+                return 1;
+            }else{
+                DB::rollBack();
+                return 0;
+            }
+        }
     }
     /**
      * 支付宝同步通知
