@@ -27,6 +27,6 @@ Route::get('goods/submitorder','Goods\GoodsController@submitorder');//订单列�
 
 
 //支付宝异步回调
-Route::get('goods/notify','Goods\GoodsController@notify');
+Route::post('goods/notify','Goods\GoodsController@notify');
 
 Route::get('goods/aliReturn','Goods\GoodsController@aliReturn');
